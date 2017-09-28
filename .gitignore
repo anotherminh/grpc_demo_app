@@ -7,3 +7,6 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+grpc_calculator_clients/scala/project
+grpc_calculator_clients/scala/target
