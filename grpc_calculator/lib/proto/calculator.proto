@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package calculator;
+
+service CalculatorService {
+  rpc AddInts(CalculatorRequest) returns (CalculatorResponse);
+  rpc SubtractInts(CalculatorRequest) returns (CalculatorResponse);
+  rpc DivideInts(CalculatorRequest) returns (CalculatorResponse);
+  rpc MultiplyInts(CalculatorRequest) returns (CalculatorResponse);
+}
+
+message CalculatorRequest {
+  repeated sint64 nums = 1; // sint is better for handling negatives
+}
+
+message CalculatorResponse {
+  sint64 result = 1;
+}

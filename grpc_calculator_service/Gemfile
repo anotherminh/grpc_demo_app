@@ -1,0 +1,2 @@
+gem 'grpc_calculator', path: '../grpc_calculator'
+gem 'grpc'
